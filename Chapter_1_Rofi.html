@@ -3,34 +3,66 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
+        <title>Profile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <center>
-            <h1>Profile Mochamad Imron Rofi</h1>
-            <img src="foto.jpg" height="200px" width="140px" alt="Foto profile">
-            <p>
-                Hi, nama saya mochamad Imron Rofi, <br>
-                Saya belajar programming waktu kuliah,<br>
-                dan dari internet serta ketika sudah bekerja
-            </p>
-            <hr>
-        </center>
-        <h2>Programming Goals</h2>  
-        <ol>
-            <li>Membuat sebuah aplikasi yang dapat memudahkan masyarakat</li>
-            <li>membuat sebuah perusahaan Vendor di kota malang</li>
-        </ol>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Bermain Gitar</li>
-            <li>Badminton</li>
-            <li>Main Dota</li>
-        </ul>
-        <h2>Favorite Website</h2>
-        <a href="http://www.chordfrenzy.com/" target="_blank">www.chordfrenzy.com/</a>      
+        <div class="container">
+            <nav class="navbar navbar-dark bg-primary">
+               <h1 class="header">Profile</h1>
+            </nav>
+            <div class="row">
+                <div class="col-lg-3">
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="pantai.jfif" height="200px" width="140px" class="card-img-top" alt="Foto profile">
+                        <div class="card-body profile">
+                            <h2 class="nama">Mochamad Imron Rofi</h2>
+                            <p class="card-text">Hi, nama saya mochamad Imron Rofi,
+                                Saya belajar programming waktu kuliah,
+                                dan dari internet serta ketika sudah bekerja
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" id="content">
+                    <br>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Membuat sebuah aplikasi yang dapat memudahkan masyarakat</li>
+                                <li class="list-group-item">Membuat sebuah perusahaan Vendor di kota malang</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Bermain Gitar</li>
+                                <li class="list-group-item">Badminton</li>
+                                <li class="list-group-item">Main Dota</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <br>
+                            <h2 class="title">ChordFrenzy</h2>
+                            <p class="description"><a href="http://www.chordfrenzy.com/" target="_blank">www.chordfrenzy.com</a> adalah sebuah website yang menyediakan chord gitar
+                                untuk mempermudah musisi dalam bermain gitar maupun bernyanyi karena sudah di lengkapi dengan lirik
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <br>
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Programming Goals</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Hobbies</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Favorite Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 
