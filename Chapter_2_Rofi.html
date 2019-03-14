@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Exercise</title>
+</head>
+<body>
+    <script>
+        let nilai1 = parseInt(prompt('nilai 1'))
+        let nilai2 = parseInt(prompt('nilai 2'))
+        let isi = 'hasil = '
+        let hasil
+        let choose = prompt('Masukkan Operator => tambah, kurang, kali, bagi, pangkat, min, max')
+
+        if (choose == 'tambah'){
+            hasil = nilai1 + nilai2
+            alert(isi + hasil)
+        } else if (choose == 'kurang') {
+            hasil = nilai1 - nilai2
+            alert(isi + hasil)
+        }else if (choose == 'kali'){
+            hasil = nilai1 * nilai2
+            alert(isi + hasil)
+        }else if (choose == 'bagi'){
+            hasil = nilai1 / nilai2
+            alert(isi + hasil)
+        } else if (choose == 'pangkat'){
+            hasil = Math.pow(nilai1, nilai2)
+            alert(isi + hasil)
+        }else if (choose == 'min'){
+            hasil = Math.min(nilai1, nilai2)
+            alert(isi + hasil)
+        }else if (choose == 'max'){
+            hasil = Math.max(nilai1, nilai2)
+            alert(isi + hasil)
+        }else {
+            alert('Mohon maaf salah operator bro !!!')
+        }
+    </script>
+</body>
+</html>
